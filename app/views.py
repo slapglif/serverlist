@@ -5,7 +5,6 @@ import re, requests, time, datetime, json
 from app import app, engine, db_session
 from flask import url_for, render_template, flash, g, session, redirect, request
 from subprocess import (PIPE, Popen)
-import concurrent.futures
 from squery import SourceQuery
 
 ## Get human readable date ##
