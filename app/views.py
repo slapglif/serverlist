@@ -129,6 +129,7 @@ def sList():
     serverlist = []
     for server in Server.query.filter(Server.hostname.isnot(None)):
         serverlist += [server]
+    serverlist.sort(key=lambda x: -int(x.curplayers))
     return serverlist
 
 
